@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #414b56;
+}
+
+.game-container {
+  background-color: #606a74;
+  height: 80vh;
+  max-height: 800px;
+  width: 80vw;
+  max-width: 1400px;
+  position: absolute;
+  left: 10vw;
+  right: 10vw;
+  top: 10vh;
+  bottom: 10vh;
+  border: 5px solid black;
+  border-radius: 4px;
+  overflow: scroll;
+}
+
+.game-container::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #d2d6d9;
+}
+
+.game-container::-webkit-scrollbar-thumb {
+  background: #323531;
+}
+
+table {
+  display: block;
+  white-space: nowrap;
+  border-collapse: collapse;
+}
+
+tr td {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+
+p {
+  margin-top: 25%;
+}
+
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+  text-align: center;
+}
+
+.modal__action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal__action:hover,
+.modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
